@@ -1,0 +1,29 @@
+.nav-panel {
+    position: fixed;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+.nav-panel__link {
+    margin-right: 30px;
+    padding: 10px 0 10px 0;
+    font-family: "Amatic SC", cursive;
+    font-size: 40px;
+    transition: 0.2s;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover {
+        font-family: "Amatic SC", cursive;
+        color: #71b5e4;
+    }
+}
+
+.nav-panel__img {
+    margin-right: 20px;
+    width: 40px;
+}
