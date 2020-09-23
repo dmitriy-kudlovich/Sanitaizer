@@ -1,0 +1,19 @@
+.about {
+    background-image: url(../img/about/slayt-bg.jpg);
+    padding: 60px 0 60px 0;
+    text-align: center;
+}
+
+.about__text {
+    font-family: "Amatic SC", cursive;
+    font-size: 40px;
+    text-align: left;
+}
+
+.about .column {
+    margin-right: 20px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
