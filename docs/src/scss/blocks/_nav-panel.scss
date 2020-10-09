@@ -8,19 +8,36 @@
 }
 
 .nav-panel__link {
+    position: relative;
+    display: inline-block;
     margin-right: 30px;
     padding: 10px 0 10px 0;
     font-family: "Amatic SC", cursive;
     font-size: 40px;
-    transition: 0.2s;
 
-    &:last-child {
-        margin-right: 0;
+    &::before {
+        position: absolute;
+        content: "";
+        display: block;
+        left: -3px;
+        right: -3px;
+        bottom: 7px;
+        width: 0;
+        z-index: -1;
     }
 
     &:hover {
         font-family: "Amatic SC", cursive;
-        color: #71b5e4;
+
+        &::before {
+            transition: 0.2s;
+            border: 1px dashed #000;
+            width: 100%;
+        }
+    }
+
+    &:last-child {
+        margin-right: 0;
     }
 }
 
