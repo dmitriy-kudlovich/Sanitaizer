@@ -70,6 +70,16 @@ p {
     }
 }
 
+.column--mini {
+    text-align: center;
+    width: 330px;
+    margin-right: 50px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
 .main-title {
     font-family: "Poiret One", cursive;
     font-size: 80px;

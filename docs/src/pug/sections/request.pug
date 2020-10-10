@@ -1,0 +1,31 @@
+section.request#request
+    .container
+        h2.section__title Оставить заявку
+        .row
+            .column
+                a.request__link(href="tel:#!")
+                    i(class="fas fa-phone-volume")
+                    p.request__link-title Телефон
+                    p.request__link-text 8(927) XXX XX XX
+                a.request__link(href="mailto:ruslan-2036@yandex.ru")
+                    i(class="fas fa-envelope")
+                    p.request__link-title Почта
+                    p.request__link-text ruslan-2036@yandex.ru
+            .column
+                .form-block
+                    form.section-contacts_content_form#section-contacts_content_form
+                        input(type="hidden" name="project_name" value="portfolio")
+                        input(type="hidden" name="admin_email" value="carnagery@mail.ru")
+                        input(type="hidden" name="email_from" value="info@portfolio.ru")
+                        .form_element
+                            input.input-validate#contact-form-email(type="email" name="email" required)
+                            span.fake-placeholder Ваш Email
+                        .form_element
+                            input.input-validate#contact-form-subject(type="text" name="subject" required)
+                            span.fake-placeholder Тема письма
+                        .form_element
+                            textarea.input-validate.textarea-message#message(name="message" required)
+                            span.fake-placeholder Сообщение
+                        .submit-button
+                            input.button_link(type="submit" value="Отправить" name="form-button")
+                    div#answer

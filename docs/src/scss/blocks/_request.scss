@@ -1,0 +1,59 @@
+.request {
+    padding: 120px 0 80px 0;
+    text-align: center;
+}
+
+.request__link {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-bottom: 80px;
+
+    width: fit-content;
+    font-family: "Amatic SC", cursive;
+    font-size: 70px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        display: block;
+        left: 0;
+        right: 0;
+        bottom: -7px;
+        width: 0;
+        z-index: -1;
+    }
+
+    &:hover {
+        font-family: "Amatic SC", cursive;
+
+        &::before {
+            transition: 0.2s;
+            border-bottom: 1px dashed #000;
+            width: 100%;
+        }
+    }
+}
+
+.request__link i {
+    display: block;
+    margin-right: 20px;
+
+    width: 75px;
+}
+
+.request__link-title {
+    margin-right: 20px;
+    line-height: 1;
+    text-align: left;
+    width: 170px;
+}
+
+.request__link-text {
+    font-size: 40px;
+}
