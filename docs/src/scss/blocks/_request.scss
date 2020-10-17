@@ -40,6 +40,12 @@
     }
 }
 
+.pseudo--none {
+    &::before {
+        display: none;
+    }
+}
+
 .request__link i {
     display: block;
     margin-right: 20px;
