@@ -57,3 +57,61 @@
 .request__link-text {
     font-size: 40px;
 }
+
+.button_link {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.section-contacts_content_form {
+    display: block;
+    text-align: center;
+    background-color: #fff;
+}
+
+.form_element {
+    position: relative;
+    margin-bottom: 48px;
+}
+
+.input-validate {
+    display: inline-block;
+    padding: 5px 10px;
+    width: 400px;
+    height: 50px;
+    font-family: "Amatic SC", cursive;
+    font-size: 20px;
+    text-align: left;
+    border: 1px dashed #000;
+    border-radius: 5px;
+    outline: none;
+    background-color: #fff;
+
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0), inset 0 0 0 100px #fff;
+
+    &::placeholder {
+        font-family: "Amatic SC", cursive;
+    }
+
+    &:active {
+        border: 1px dashed #000;
+    }
+
+    &:focus {
+        border: 1px dashed #000;
+    }
+}
+
+textarea {
+    outline: none;
+    resize: none;
+}
+.textarea-message {
+    display: inline-block;
+    width: 400px;
+    height: 114px;
+}
+
+.request .row {
+    align-items: flex-start;
+}

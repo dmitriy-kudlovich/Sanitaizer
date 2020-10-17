@@ -11,7 +11,7 @@
   <body>
     <nav class="nav-panel">
       <div class="container">
-        <div class="row"><a class="nav-panel__link" href="#about">Об устройстве</a><a class="nav-panel__link" href="#use-area">Область применения</a><a class="nav-panel__link" href="#request">Оставить заявку</a></div>
+        <div class="row"><a class="nav-panel__link" href="#about">Об устройстве</a><a class="nav-panel__link" href="#property">Характеристики устройства</a><a class="nav-panel__link" href="#request">Оставить заявку</a></div>
       </div>
     </nav>
     <header class="header">
@@ -31,123 +31,88 @@
         <div class="container">
           <h2 class="section__title">Об устройстве</h2>
           <div class="row">
-            <div class="column"><img src="./img/about/device.png"/></div>
+            <div class="column"><img class="device-photo" src="./img/about/device.png"/>
+              <p class="img-text">Дезинфектор-прототип</p>
+            </div>
             <div class="column">
               <div class="about__text">
-                <h3 class="section__title--sub">Назначение</h3>Дезинфектор предназначен для мелкодисперсного распыла водного раствора дезинфицирующих веществ с целью повседневной дезинфекции поверхности кожи и одежды.
+                <h3 class="section__title--sub">Назначение</h3>
+                <p class="about__text--desc">Дезинфектор предназначен для мелкодисперсного распыла водного раствора дезинфицирующих веществ с целью повседневной дезинфекции поверхности кожи и одежды.</p><a class="button" href="./libs/tech-img.docx" download="Технический облик">Технический облик устройства</a>
               </div>
             </div>
           </div>
-          <h3 class="section__title--sub">Характеристики</h3>
-          <div class="timeline__row">
-            <div class="timeline__row-icon"><i class="fas fa-weight-hanging"></i></div>
-            <div class="timeline__row-text">
-              <div class="timeline__row-text-heading">Масса: не более 2 кг</div>
-              <div class="timeline__row-text-desc">
+          <h3 class="section__title--sub" id="property">Характеристики устройства</h3>
+          <div class="timeline-block">
+            <div class="timeline__row">
+              <div class="timeline__row-icon"><i class="fas fa-weight-hanging"></i></div>
+              <div class="timeline__row-text">
+                <div class="timeline__row-text-heading">Масса: не более 2 кг</div>
+                <div class="timeline__row-text-desc">
+                </div>
               </div>
             </div>
-          </div>
-          <div class="timeline__row">
-            <div class="timeline__row-icon"><i class="fas fa-ruler-combined"></i></div>
-            <div class="timeline__row-text">
-              <div class="timeline__row-text-heading">Объём ёмкости с дезинфицирующим раствором: 0,5 л</div>
-              <div class="timeline__row-text-desc">
+            <div class="timeline__row">
+              <div class="timeline__row-icon"><i class="fas fa-ruler-combined"></i></div>
+              <div class="timeline__row-text">
+                <div class="timeline__row-text-heading">Объём ёмкости с дезинфицирующим раствором: 0,5 л</div>
+                <div class="timeline__row-text-desc">
+                </div>
               </div>
             </div>
-          </div>
-          <div class="timeline__row">
-            <div class="timeline__row-icon"><i class="fas fa-charging-station"></i></div>
-            <div class="timeline__row-text">
-              <div class="timeline__row-text-heading">Токопотребление:</div>
-              <div class="timeline__row-text-desc">
-                <p><i class="fas fa-star-of-life">&nbsp;</i>напряжение - 220 В</p>
-                <p><i class="fas fa-star-of-life">&nbsp;</i>максимальная мощность - не более 50 Вт</p>
-                <p><i class="fas fa-star-of-life">&nbsp;</i>питание от сети, длина электрошнура - 5 м</p>
+            <div class="timeline__row">
+              <div class="timeline__row-icon"><i class="fas fa-charging-station"></i></div>
+              <div class="timeline__row-text">
+                <div class="timeline__row-text-heading">Токопотребление:</div>
+                <div class="timeline__row-text-desc">
+                  <p><i class="fas fa-star-of-life">&nbsp;</i>напряжение - 220 В</p>
+                  <p><i class="fas fa-star-of-life">&nbsp;</i>максимальная мощность - не более 50 Вт</p>
+                  <p><i class="fas fa-star-of-life">&nbsp;</i>питание от сети, длина электрошнура - 5 м</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="timeline__row">
-            <div class="timeline__row-icon"><i class="fas fa-shower"></i></div>
-            <div class="timeline__row-text">
-              <div class="timeline__row-text-heading">Характеристики распыла:</div>
-              <div class="timeline__row-text-desc">
-                <p><i class="fas fa-star-of-life">&nbsp;</i>расход дезинфицирующего раствора - до 200 см3/мин</p>
-                <p><i class="fas fa-star-of-life">&nbsp;</i>размеры капель - 10÷50 мкм</p>
-                <p><i class="fas fa-star-of-life">&nbsp;</i>длина факела распыла - до 800 мм</p>
+            <div class="timeline__row">
+              <div class="timeline__row-icon"><i class="fas fa-shower"></i></div>
+              <div class="timeline__row-text">
+                <div class="timeline__row-text-heading">Характеристики распыла:</div>
+                <div class="timeline__row-text-desc">
+                  <p><i class="fas fa-star-of-life">&nbsp;</i>расход дезинфицирующего раствора - до 200 см3/мин</p>
+                  <p><i class="fas fa-star-of-life">&nbsp;</i>размеры капель - 10÷50 мкм</p>
+                  <p><i class="fas fa-star-of-life">&nbsp;</i>длина факела распыла - до 800 мм</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="timeline__row">
-            <div class="timeline__row-icon"><i class="fas fa-ruble-sign"></i></div>
-            <div class="timeline__row-text">
-              <div class="timeline__row-text-heading">Стоимость деталей для сборки дезинфектора ~ 1900 руб.</div>
-              <div class="timeline__row-text-desc">
-                <p>Возможно снижение на 10÷20% при оптовых закупках</p>
+            <div class="timeline__row">
+              <div class="timeline__row-icon"><i class="fas fa-ruble-sign"></i></div>
+              <div class="timeline__row-text">
+                <div class="timeline__row-text-heading">Стоимость деталей для сборки дезинфектора ~ 1900 руб.</div>
+                <div class="timeline__row-text-desc">
+                  <p>Возможно снижение на 10÷20% при оптовых закупках</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="timeline__row">
-            <div class="timeline__row-icon"><i class="fas fa-wrench"></i></div>
-            <div class="timeline__row-text">
-              <div class="timeline__row-text-heading">Трудоёмкость сборки - до 0,1 ч/день</div>
-              <div class="timeline__row-text-desc">
+            <div class="timeline__row">
+              <div class="timeline__row-icon"><i class="fas fa-wrench"></i></div>
+              <div class="timeline__row-text">
+                <div class="timeline__row-text-heading">Трудоёмкость сборки - до 0,1 ч/день</div>
+                <div class="timeline__row-text-desc">
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="use-area" id="use-area">
-        <div class="container">
-          <h2 class="section__title">Область применения</h2>
-          <div class="row">
-            <div class="column--mini">
-              <div class="column--mini__img"><i class="fas fa-house-user"></i></div>
-              <div class="column--mini__text">Дома</div>
-            </div>
-            <div class="column--mini">
-              <div class="column--mini__img"><i class="fas fa-store"></i></div>
-              <div class="column--mini__text">В магазине</div>
-            </div>
-            <div class="column--mini">
-              <div class="column--mini__img"><i class="fas fa-industry"></i></div>
-              <div class="column--mini__text">На производстве</div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="column--mini">
-              <div class="column--mini__img"><i class="fas fa-graduation-cap"></i></div>
-              <div class="column--mini__text">В образовательных учреждениях</div>
-            </div>
-            <div class="column--mini">
-              <div class="column--mini__img"><i class="fas fa-hospital"></i></div>
-              <div class="column--mini__text">В медицинских учреждениях</div>
-            </div>
-            <div class="column--mini">
-              <div class="column--mini__img"><i class="fas fa-baby-carriage"></i></div>
-              <div class="column--mini__text">В детских садах</div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="column--mini">
-              <div class="column--mini__img"><i class="fas fa-utensils"></i></div>
-              <div class="column--mini__text">В общественном питании</div>
-            </div>
-            <div class="column--mini">
-              <div class="column--mini__img"><i class="fas fa-bus-alt"></i></div>
-              <div class="column--mini__text">В общественном транспорте</div>
-            </div>
-          </div>
+          </div><a class="button" href="./libs/property.docx" download="Основные характеристики">Подробные характеристики устройства</a>
         </div>
       </section>
       <section class="request" id="request">
         <div class="container">
           <h2 class="section__title">Оставить заявку</h2>
           <div class="row">
-            <div class="column"><a class="request__link" href="tel:#!"><i class="fas fa-phone-volume"></i>
-                <p class="request__link-title">Телефон</p>
-                <p class="request__link-text">8(927) XXX XX XX</p></a><a class="request__link" href="mailto:ruslan-2036@yandex.ru"><i class="fas fa-envelope"></i>
+            <div class="column"><a class="request__link" href="mailto:ruslan-2036@yandex.ru"><i class="fas fa-envelope"></i>
                 <p class="request__link-title">Почта</p>
-                <p class="request__link-text">ruslan-2036@yandex.ru</p></a></div>
+                <p class="request__link-text">ruslan-2037@yandex.ru</p></a>
+              <div class="request__link">
+                <p class="request__link-title">Адрес</p>
+                <p class="request__link-text">Россия, Москва</p>
+              </div>
+            </div>
             <div class="column">
               <div class="form-block">
                 <form class="section-contacts_content_form" id="section-contacts_content_form">
@@ -155,16 +120,16 @@
                   <input type="hidden" name="admin_email" value="carnagery@mail.ru"/>
                   <input type="hidden" name="email_from" value="info@portfolio.ru"/>
                   <div class="form_element">
-                    <input class="input-validate" id="contact-form-email" type="email" name="email" required="required"/><span class="fake-placeholder">Ваш Email</span>
+                    <input class="input-validate" id="contact-form-email" type="email" name="email" placeholder="Ваш Email" required="required"/>
                   </div>
                   <div class="form_element">
-                    <input class="input-validate" id="contact-form-subject" type="text" name="subject" required="required"/><span class="fake-placeholder">Тема письма</span>
+                    <input class="input-validate" id="contact-form-subject" type="text" name="subject" placeholder="Тема письма" required="required"/>
                   </div>
                   <div class="form_element">
-                    <textarea class="input-validate textarea-message" id="message" name="message" required="required"></textarea><span class="fake-placeholder">Сообщение</span>
+                    <textarea class="input-validate textarea-message" id="message" name="message" placeholder="Сообщение" required="required"></textarea>
                   </div>
                   <div class="submit-button">
-                    <input class="button_link" type="submit" value="Отправить" name="form-button"/>
+                    <input class="button_link button" type="submit" value="Отправить" name="form-button"/>
                   </div>
                 </form>
                 <div id="answer"></div>

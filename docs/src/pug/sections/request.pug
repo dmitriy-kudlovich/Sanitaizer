@@ -3,14 +3,13 @@ section.request#request
         h2.section__title Оставить заявку
         .row
             .column
-                a.request__link(href="tel:#!")
-                    i(class="fas fa-phone-volume")
-                    p.request__link-title Телефон
-                    p.request__link-text 8(927) XXX XX XX
                 a.request__link(href="mailto:ruslan-2036@yandex.ru")
                     i(class="fas fa-envelope")
                     p.request__link-title Почта
-                    p.request__link-text ruslan-2036@yandex.ru
+                    p.request__link-text ruslan-2037@yandex.ru
+                .request__link
+                    p.request__link-title Адрес
+                    p.request__link-text Россия, Москва
             .column
                 .form-block
                     form.section-contacts_content_form#section-contacts_content_form
@@ -18,14 +17,11 @@ section.request#request
                         input(type="hidden" name="admin_email" value="carnagery@mail.ru")
                         input(type="hidden" name="email_from" value="info@portfolio.ru")
                         .form_element
-                            input.input-validate#contact-form-email(type="email" name="email" required)
-                            span.fake-placeholder Ваш Email
+                            input.input-validate#contact-form-email(type="email" name="email" placeholder="Ваш Email"  required)
                         .form_element
-                            input.input-validate#contact-form-subject(type="text" name="subject" required)
-                            span.fake-placeholder Тема письма
+                            input.input-validate#contact-form-subject(type="text" name="subject" placeholder="Тема письма" required)
                         .form_element
-                            textarea.input-validate.textarea-message#message(name="message" required)
-                            span.fake-placeholder Сообщение
+                            textarea.input-validate.textarea-message#message(name="message" placeholder="Сообщение" required)
                         .submit-button
-                            input.button_link(type="submit" value="Отправить" name="form-button")
+                            input.button_link.button(type="submit" value="Отправить" name="form-button")
                     div#answer

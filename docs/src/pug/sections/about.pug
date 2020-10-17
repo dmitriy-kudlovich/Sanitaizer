@@ -3,37 +3,41 @@ section.about#about
         h2.section__title Об устройстве
         .row
             .column
-                img(src="./img/about/device.png")
+                img.device-photo(src="./img/about/device.png")
+                p.img-text Дезинфектор-прототип
             .column
                 .about__text
                     h3.section__title--sub Назначение
-                    | Дезинфектор предназначен для мелкодисперсного распыла водного раствора дезинфицирующих веществ с целью повседневной дезинфекции поверхности кожи и одежды.
+                    p.about__text--desc Дезинфектор предназначен для мелкодисперсного распыла водного раствора дезинфицирующих веществ с целью повседневной дезинфекции поверхности кожи и одежды.
+                    a(href="./libs/tech-img.docx" download="Технический облик").button Технический облик устройства
 
-        h3.section__title--sub Характеристики
+        h3.section__title--sub#property Характеристики устройства
 
-        +timeline("fas fa-weight-hanging", "Масса: не более 2 кг")
-        +timeline("fas fa-ruler-combined", "Объём ёмкости с дезинфицирующим раствором: 0,5 л")
-        +timeline("fas fa-charging-station", "Токопотребление:")
-            p
-                i(class="fas fa-star-of-life") &nbsp;
-                | напряжение - 220 В
-            p
-                i(class="fas fa-star-of-life") &nbsp;
-                | максимальная мощность - не более 50 Вт
-            p
-                i(class="fas fa-star-of-life") &nbsp;
-                | питание от сети, длина электрошнура - 5 м
-        +timeline("fas fa-shower", "Характеристики распыла:")
-            p
-                i(class="fas fa-star-of-life") &nbsp;
-                | расход дезинфицирующего раствора - до 200 см3/мин
-            p
-                i(class="fas fa-star-of-life") &nbsp;
-                | размеры капель - 10÷50 мкм
-            p
-                i(class="fas fa-star-of-life") &nbsp;
-                |длина факела распыла - до 800 мм
-        +timeline("fas fa-ruble-sign", "Стоимость деталей для сборки дезинфектора ~ 1900 руб.")
-            p Возможно снижение на 10÷20% при оптовых закупках
-        +timeline("fas fa-wrench", "Трудоёмкость сборки - до 0,1 ч/день")
+        .timeline-block
+            +timeline("fas fa-weight-hanging", "Масса: не более 2 кг")
+            +timeline("fas fa-ruler-combined", "Объём ёмкости с дезинфицирующим раствором: 0,5 л")
+            +timeline("fas fa-charging-station", "Токопотребление:")
+                p
+                    i(class="fas fa-star-of-life") &nbsp;
+                    | напряжение - 220 В
+                p
+                    i(class="fas fa-star-of-life") &nbsp;
+                    | максимальная мощность - не более 50 Вт
+                p
+                    i(class="fas fa-star-of-life") &nbsp;
+                    | питание от сети, длина электрошнура - 5 м
+            +timeline("fas fa-shower", "Характеристики распыла:")
+                p
+                    i(class="fas fa-star-of-life") &nbsp;
+                    | расход дезинфицирующего раствора - до 200 см3/мин
+                p
+                    i(class="fas fa-star-of-life") &nbsp;
+                    | размеры капель - 10÷50 мкм
+                p
+                    i(class="fas fa-star-of-life") &nbsp;
+                    |длина факела распыла - до 800 мм
+            +timeline("fas fa-ruble-sign", "Стоимость деталей для сборки дезинфектора ~ 1900 руб.")
+                p Возможно снижение на 10÷20% при оптовых закупках
+            +timeline("fas fa-wrench", "Трудоёмкость сборки - до 0,1 ч/день")
 
+        a(href="./libs/property.docx" download="Основные характеристики").button Подробные характеристики устройства
