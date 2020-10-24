@@ -42,7 +42,7 @@ function adopt($text) {
 	return '=?UTF-8?B?'.base64_encode($text).'?=';
 }
 
-$form_subject = 'Заявка с сайта Portfolio';
+$form_subject = 'Заявка по чертежам санитайзера';
 
 // Preparing header
 $headers = "MIME-Version: 1.0" . PHP_EOL .

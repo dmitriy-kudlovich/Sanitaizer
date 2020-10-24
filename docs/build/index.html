@@ -9,6 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&amp;family=Poiret+One&amp;display=swap" rel="stylesheet"/>
   </head>
   <body>
+    <div class="mobile-nav">
+      <div class="close"><span class="close-upstairs"></span><span class="close-downstairs"></span></div>
+      <div class="mobile-nav__links"><a class="nav-panel__link" href="#about">Об устройстве</a><a class="nav-panel__link" href="#property">Характеристики устройства</a><a class="nav-panel__link" href="#request">Оставить заявку</a></div><a class="request__link" href="mailto:ruslan-2037@yandex.ru"><i class="fas fa-envelope"></i>
+        <p class="request__link-title">Почта:</p>
+        <p class="request__link-text">ruslan-2037@yandex.ru</p></a>
+    </div>
     <nav class="nav-panel">
       <div class="container">
         <div class="row"><a class="nav-panel__link" href="#about">Об устройстве</a><a class="nav-panel__link" href="#property">Характеристики устройства</a><a class="nav-panel__link" href="#request">Оставить заявку</a></div>
@@ -16,6 +22,9 @@
     </nav>
     <header class="header">
       <div class="container">
+        <div class="hamburger-wrapper">
+          <div id="hamburger"><span class="middle-line"></span></div>
+        </div>
         <div class="row">
           <div class="column">
             <h1 class="main-title">Чертежи для изготовления дезинфектора</h1>
@@ -33,15 +42,17 @@
           <div class="row">
             <div class="column"><img class="device-photo" src="./img/about/device.png"/>
               <p class="img-text">Дезинфектор-прототип</p>
+              <p class="text">Фото работоспособного устройства</p>
             </div>
             <div class="column">
               <div class="about__text">
                 <h3 class="section__title--sub">Назначение</h3>
-                <p class="about__text--desc">Дезинфектор предназначен для мелкодисперсного распыла водного раствора дезинфицирующих веществ с целью повседневной дезинфекции поверхности кожи и одежды.</p><a class="button" href="./libs/tech-img.docx" download="Технический облик">Технический облик устройства</a>
+                <p class="about__text--desc">Дезинфектор предназначен для мелкодисперсного распыла водного раствора дезинфицирующих веществ с целью повседневной дезинфекции поверхности кожи и одежды.</p>
+                <div class="button-block"><a class="button" href="./libs/tech-img.docx">Технический облик устройства</a></div>
               </div>
             </div>
           </div>
-          <h3 class="section__title--sub" id="property">Характеристики устройства</h3>
+          <h3 class="section__title--sub text-align--center" id="property">Характеристики устройства</h3>
           <div class="timeline-block">
             <div class="timeline__row">
               <div class="timeline__row-icon"><i class="fas fa-weight-hanging"></i></div>
@@ -98,7 +109,7 @@
                 </div>
               </div>
             </div>
-          </div><a class="button" href="./libs/property.docx" download="Основные характеристики">Подробные характеристики устройства</a>
+          </div><a class="button" href="./libs/property.docx">Подробные характеристики устройства</a>
         </div>
       </section>
       <section class="request" id="request">
@@ -106,18 +117,13 @@
           <h2 class="section__title">Оставить заявку</h2>
           <div class="row">
             <div class="column"><a class="request__link" href="mailto:ruslan-2037@yandex.ru"><i class="fas fa-envelope"></i>
-                <p class="request__link-title">Почта</p>
-                <p class="request__link-text">ruslan-2037@yandex.ru</p></a>
-              <div class="request__link pseudo--none">
-                <p class="request__link-title">Адрес</p>
-                <p class="request__link-text">Россия, Москва</p>
-              </div>
-            </div>
+                <p class="request__link-title">Почта:</p>
+                <p class="request__link-text">ruslan-2037@yandex.ru</p></a></div>
             <div class="column">
               <div class="form-block">
-                <form class="section-contacts_content_form" id="section-contacts_content_form">
-                  <input type="hidden" name="project_name" value="portfolio"/>
-                  <input type="hidden" name="admin_email" value="carnagery@mail.ru"/>
+                <form class="section-contacts_content_form" id="section-contacts_content_form" action="./php/send.php">
+                  <input type="hidden" name="project_name" value="sanitizer draft"/>
+                  <input type="hidden" name="admin_email" value="ruslan-2037@yandex.ru"/>
                   <input type="hidden" name="email_from" value="info@portfolio.ru"/>
                   <div class="form_element">
                     <input class="input-validate" id="contact-form-email" type="email" name="email" placeholder="Ваш Email" required="required"/>

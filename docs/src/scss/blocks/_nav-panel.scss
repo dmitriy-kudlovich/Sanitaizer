@@ -1,30 +1,33 @@
 .nav-panel {
-    position: absolute;
-    top: 0;
-    margin: 0 auto;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    width: 100%;
+    display: none;
+
+    // Медиазапрос для планшетов
+    @media (min-width: 798px) {
+        display: block;
+        position: absolute;
+        top: 0;
+        margin: 0 auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+    }
+}
+
+.nav-panel .row {
+    margin-bottom: 0;
+
+    @media (min-width: 798px) {
+        flex-direction: row;
+    }
 }
 
 .nav-panel__link {
+    display: block;
     position: relative;
-    display: inline-block;
-    margin-right: 30px;
     padding: 10px 0 10px 0;
-    font-family: "Amatic SC", cursive;
-    font-size: 40px;
 
-    &::before {
-        position: absolute;
-        content: "";
-        display: block;
-        left: -3px;
-        right: -3px;
-        bottom: 7px;
-        width: 0;
-        z-index: -1;
-    }
+    font-family: "Amatic SC", cursive;
+    font-size: 30px;
 
     &:hover {
         font-family: "Amatic SC", cursive;
@@ -37,7 +40,30 @@
     }
 
     &:last-child {
-        margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+    // Медиазапрос для планшетов
+    @media (min-width: 798px) {
+        display: inline-block;
+        margin-right: 30px;
+        font-size: 40px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            display: block;
+            left: -3px;
+            right: -3px;
+            bottom: 7px;
+            width: 0;
+            z-index: -1;
+        }
+
+        &:last-child {
+            margin-right: 0;
+            margin-bottom: 0;
+        }
     }
 }
 

@@ -21,4 +21,21 @@ $(document).ready(function () {
         return false;
     
     });
-    })
+    });
+
+    // Для мобильной панели навигации .mobile-nav
+
+let hamburger = document.getElementById("hamburger");
+let mobilePanel = document.querySelector(".mobile-nav");
+let body = document.querySelector("body");
+
+
+hamburger.onclick = function () {
+    mobilePanel.classList.add("mobile-nav--active");
+    body.classList.add("overflow-hidden");
+}
+
+mobilePanel.onclick = function () {
+    mobilePanel.classList.remove("mobile-nav--active");
+    body.classList.remove("overflow-hidden");
+  };

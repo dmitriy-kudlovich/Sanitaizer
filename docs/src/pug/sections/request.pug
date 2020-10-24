@@ -5,16 +5,13 @@ section.request#request
             .column
                 a.request__link(href="mailto:ruslan-2037@yandex.ru")
                     i(class="fas fa-envelope")
-                    p.request__link-title Почта
+                    p.request__link-title Почта:
                     p.request__link-text ruslan-2037@yandex.ru
-                .request__link.pseudo--none
-                    p.request__link-title Адрес
-                    p.request__link-text Россия, Москва
             .column
                 .form-block
-                    form.section-contacts_content_form#section-contacts_content_form
-                        input(type="hidden" name="project_name" value="portfolio")
-                        input(type="hidden" name="admin_email" value="carnagery@mail.ru")
+                    form.section-contacts_content_form#section-contacts_content_form(action="./php/send.php")
+                        input(type="hidden" name="project_name" value="sanitizer draft")
+                        input(type="hidden" name="admin_email" value="ruslan-2037@yandex.ru")
                         input(type="hidden" name="email_from" value="info@portfolio.ru")
                         .form_element
                             input.input-validate#contact-form-email(type="email" name="email" placeholder="Ваш Email"  required)

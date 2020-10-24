@@ -5,13 +5,15 @@ section.about#about
             .column
                 img.device-photo(src="./img/about/device.png")
                 p.img-text Дезинфектор-прототип
+                p.text Фото работоспособного устройства
             .column
                 .about__text
                     h3.section__title--sub Назначение
                     p.about__text--desc Дезинфектор предназначен для мелкодисперсного распыла водного раствора дезинфицирующих веществ с целью повседневной дезинфекции поверхности кожи и одежды.
-                    a(href="./libs/tech-img.docx" download="Технический облик").button Технический облик устройства
+                    .button-block
+                        a(href="./libs/tech-img.docx").button Технический облик устройства
 
-        h3.section__title--sub#property Характеристики устройства
+        h3.section__title--sub.text-align--center#property Характеристики устройства
 
         .timeline-block
             +timeline("fas fa-weight-hanging", "Масса: не более 2 кг")
@@ -40,4 +42,4 @@ section.about#about
                 p Возможно снижение на 10÷20% при оптовых закупках
             +timeline("fas fa-wrench", "Трудоёмкость сборки - до 0,1 ч/день")
 
-        a(href="./libs/property.docx" download="Основные характеристики").button Подробные характеристики устройства
+        a(href="./libs/property.docx").button Подробные характеристики устройства

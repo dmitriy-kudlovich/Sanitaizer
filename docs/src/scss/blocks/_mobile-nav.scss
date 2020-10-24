@@ -1,0 +1,77 @@
+.mobile-nav {
+    display: block;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    padding: 60px 15px 0 15px;
+    width: 320px;
+    height: 100vh;
+    border-left: 1px dashed #000;
+    background-color: #fff;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+    z-index: 9;
+
+    @media (min-width: 798px) {
+        display: none;
+    }
+}
+
+.mobile-nav--active {
+    right: 0;
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    margin-bottom: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.close:active .close-upstairs,
+.close:active .close-downstairs,
+.close:hover .close-upstairs,
+.close:hover .close-downstairs {
+    background-color: #000;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.close-upstairs {
+    position: absolute;
+    left: 13px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    height: 100%;
+    width: 5px;
+    background-color: #000;
+    z-index: 10;
+}
+
+.close-downstairs {
+    position: absolute;
+    left: 13px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    height: 100%;
+    width: 5px;
+    background-color: #000;
+    z-index: 10;
+}
+
+.mobile-nav__links {
+    margin-bottom: 70px;
+}

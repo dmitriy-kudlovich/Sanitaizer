@@ -1,18 +1,28 @@
 .request {
-    padding: 120px 0 80px 0;
+    padding: 50px 0 50px 0;
     text-align: center;
+
+    // Медиазапрос для планшетов
+    @media (min-width: 798px) {
+        padding: 80px 0 80px 0;
+    }
+
+    // Медиазапрос для десктопов
+    @media (min-width: 1230px) {
+        padding: 120px 0 80px 0;
+    }
 }
 
 .request__link {
     position: relative;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-end;
-    margin-bottom: 80px;
+    align-items: center;
+    margin-bottom: 50px;
 
     width: fit-content;
     font-family: "Amatic SC", cursive;
-    font-size: 70px;
+    font-size: 30px;
 
     &:last-child {
         margin-bottom: 0;
@@ -38,6 +48,22 @@
             width: 100%;
         }
     }
+
+    // Медиазапрос для планшетов
+    @media (min-width: 798px) {
+        margin-bottom: 65px;
+
+        font-size: 50px;
+    }
+
+    // Медиазапрос для десктопов
+    @media (min-width: 1230px) {
+        align-items: flex-end;
+
+        margin-bottom: 80px;
+
+        font-size: 70px;
+    }
 }
 
 .pseudo--none {
@@ -48,20 +74,36 @@
 
 .request__link i {
     display: block;
-    margin-right: 20px;
+    margin-right: 5px;
 
-    width: 75px;
+    // Медиазапрос для десктопов
+    @media (min-width: 1230px) {
+        margin-right: 20px;
+
+        width: 170px;
+    }
 }
 
 .request__link-title {
-    margin-right: 20px;
+    margin-right: 5px;
     line-height: 1;
     text-align: left;
-    width: 170px;
+
+    // Медиазапрос для десктопов
+    @media (min-width: 1230px) {
+        margin-right: 20px;
+
+        width: 170px;
+    }
 }
 
 .request__link-text {
-    font-size: 40px;
+    font-size: 25px;
+
+    // Медиазапрос для планшетов
+    @media (min-width: 798px) {
+        font-size: 40px;
+    }
 }
 
 .button_link {
@@ -83,7 +125,7 @@
 .input-validate {
     display: inline-block;
     padding: 5px 10px;
-    width: 400px;
+    width: 290px;
     height: 50px;
     font-family: "Amatic SC", cursive;
     font-size: 20px;
@@ -106,18 +148,44 @@
     &:focus {
         border: 1px dashed #000;
     }
+
+    // Медиазапрос для планшетов
+    @media (min-width: 798px) {
+        width: 400px;
+    }
 }
 
 textarea {
     outline: none;
     resize: none;
 }
+
 .textarea-message {
     display: inline-block;
-    width: 400px;
+    width: 290px;
     height: 114px;
+
+    // Медиазапрос для планшетов
+    @media (min-width: 798px) {
+        width: 400px;
+    }
 }
 
 .request .row {
-    align-items: flex-start;
+    align-items: center;
+
+    // Медиазапрос для десктопов
+    @media (min-width: 1230px) {
+        align-items: flex-start;
+    }
+}
+
+.contact-form__success {
+    font-family: "Amatic SC", cursive;
+    font-size: 30px;
+
+    // Медиазапрос для десктопов
+    @media (min-width: 1230px) {
+        font-size: 40px;
+    }
 }

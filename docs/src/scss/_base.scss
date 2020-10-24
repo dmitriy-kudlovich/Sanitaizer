@@ -49,25 +49,61 @@ p {
     width: auto !important;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    // Медиазапрос для планшетов
+    @media (min-width: 798px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    // Медиазапрос для десктопов
+    @media (min-width: 1230px) {
+        padding-left: unset;
+        padding-right: unset;
+    }
 }
 
 .row {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
+
+    // Медиазапрос для планшетов
+    @media (min-width: 798px) {
+        margin-bottom: 50px;
+    }
+
+    // Медиазапрос для десктопов
+    @media (min-width: 1230px) {
+        flex-direction: row;
+        margin-bottom: 80px;
+    }
 }
 
 .column {
     position: relative;
-    margin-right: 20px;
+    margin-bottom: 80px;
 
     text-align: center;
-    width: 560px;
 
-    &:last-child {
-        margin-right: 0;
+    // Медиазапрос для планшетов
+    @media (min-width: 798px) {
+        margin-bottom: 100px;
+    }
+
+    // Медиазапрос для десктопов
+    @media (min-width: 1230px) {
+        margin-bottom: 0;
+        margin-right: 20px;
+        width: 560px;
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }
 
@@ -81,22 +117,44 @@ p {
     }
 }
 
+.none {
+    display: none;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.text-align--center {
+    text-align: center !important;
+}
+
 .main-title {
     font-family: "Poiret One", cursive;
-    font-size: 80px;
+    font-size: 40px;
     color: #fff;
     -webkit-text-stroke: 1px #fff;
     z-index: 2;
     text-shadow: 0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000,
         0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000;
+
+    // Медиазапрос для планшетов
+    @media (min-width: 798px) {
+        font-size: 60px;
+    }
+
+    // Медиазапрос для десктопов
+    @media (min-width: 1230px) {
+        font-size: 80px;
+    }
 }
 
 .section__title {
     position: relative;
     display: inline-block;
-    margin-bottom: 90px;
+    margin-bottom: 40px;
     font-family: "Poiret One", cursive;
-    font-size: 60px;
+    font-size: 30px;
     color: #fff;
     -webkit-text-stroke: 1px #fff;
     z-index: 2;
@@ -109,36 +167,88 @@ p {
         display: block;
         left: -3px;
         right: -3px;
-        bottom: 7px;
+        bottom: 2px;
 
         height: 1px;
         width: auto;
         z-index: -1;
         background-color: #000;
     }
+
+    // Медиазапрос для планшетов
+    @media (min-width: 798px) {
+        margin-bottom: 50px;
+        font-size: 40px;
+    }
+
+    // Медиазапрос для десктопов
+    @media (min-width: 1230px) {
+        margin-bottom: 90px;
+        font-size: 60px;
+
+        &::after {
+            bottom: 7px;
+        }
+    }
 }
 
 .section__title--sub {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+
+    text-align: center;
     font-family: "Poiret One", cursive;
-    font-size: 45px;
+    font-size: 28px;
     color: #fff;
     -webkit-text-stroke: 1px #fff;
     z-index: 2;
     text-shadow: 0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000,
         0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000;
+
+    // Медиазапрос для планшетов
+    @media (min-width: 798px) {
+        margin-bottom: 35px;
+        font-size: 35px;
+    }
+
+    // Медиазапрос для десктопов
+    @media (min-width: 1230px) {
+        margin-bottom: 50px;
+
+        text-align: left;
+        font-size: 45px;
+    }
+}
+
+.button-block {
+    margin: 0 auto;
+    text-align: center;
 }
 
 .button {
     display: inline-block;
+    padding: 5px 10px;
     border: 2px dashed #000;
     border-radius: 5px;
     font-family: "Amatic SC", cursive;
-    font-size: 40px;
-    padding: 10px 15px;
+    font-size: 30px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
 
     &:hover {
         border-style: solid;
         font-family: "Amatic SC", cursive;
+    }
+
+    // Медиазапрос для планшетов
+    @media (min-width: 798px) {
+        padding: 10px 15px;
+        font-size: 35px;
+    }
+
+    // Медиазапрос для десктопов
+    @media (min-width: 1230px) {
+        font-size: 40px;
     }
 }
